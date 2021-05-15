@@ -1,0 +1,27 @@
+@import "../../styles/__vars"
+
+.projects
+  padding: 50px 15px
+  &__title
+    position: relative
+    text-align: center
+    font-size: 38px
+    font-weight: 900
+    color: $accent
+  &__description
+    margin: 20px 0 80px
+    text-align: center
+    font-size: 20px
+  &__list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -30px
+    padding: 0
+    list-style: none
+
+.projects.active
+  .projects__title
+    animation: swingfromtop 1.2s
+  .projects__list
+    animation: swingfromleft 1.2s
+

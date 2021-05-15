@@ -1,0 +1,74 @@
+
+.projects
+  &__item
+    flex: 0 0 50%
+    max-width: 50%
+    margin-bottom: 30px
+    padding: 0 30px
+    &-wrap
+      border-radius: 6px
+      overflow: hidden
+      box-shadow: 14px 12px 12px rgba(150, 150, 150,.1 )
+      &:hover
+        .projects__item-image
+          img
+            transform: scale(1.1)
+        .projects__item-buttons
+          opacity: 1
+          visibility: visible
+    &-image
+      position: relative
+      overflow: hidden
+      img
+        transition: all .3s ease-out
+        max-width: 100%
+    &-buttons
+      visibility: hidden
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: rgba(0,0,0,.3)
+      transition: all .3s ease-out
+      a
+        margin: 0 14px
+    &-descript
+      text-align: center
+      padding: 20px 15px
+    &-name
+      font-size: 22px
+      font-weight: bold
+    &-tech
+      margin-top: 20px
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      span
+        display: block
+        padding: 6px 14px
+        margin: 4px 8px
+        font-size: 15px
+        font-weight: bold
+        text-transform: lowercase
+        color: #555
+        background-color: #fafafa
+        border-radius: 6px
+        box-shadow: 2px 3px 0 rgba(50, 50, 50, .1)
+
+@media screen and ( max-width: 768px )
+  .projects__item
+    flex: 0 0 100%
+    max-width: 100%
+    padding: 0 4px
+  .projects__item-buttons
+    visibility: visible
+    opacity: 1
+  .projects__item-buttons 
+    a
+      font-size: 15px
+      padding: 9px 12px
